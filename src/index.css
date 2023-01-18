@@ -1,13 +1,60 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", "Open Sans";
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background: url("./images/background.jpg"),
+    linear-gradient(239.24deg, #f4f7fe 22.34%, #fbfcff 83.1%);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+  #main-wrapper {
+    padding: 0 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* COLORS */
+
+:root {
+  --black: #060a11;
+  --gray: #aaaab7;
+}
+
+/* TOOL TIP */
+
+.tool-tip {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  font-size: 0.8rem;
+  color: var(--dark);
+  background: var(--white);
+  padding: 0.3rem 0.8rem;
+  opacity: 0;
+  bottom: 110%;
+  border: 1px solid rgba(64, 65, 82, 0.2);
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+  width: max-content;
+}
+
+:has(> .tool-tip) {
+  position: relative;
+}
+
+:has(> .tool-tip):hover .tool-tip {
+  opacity: 1;
 }
