@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c170f2aa.css",
-    "main.js": "/static/js/main.ac69687a.js",
+    "main.js": "/static/js/main.333dedb5.js",
     "static/media/mv-constructora-img.jpg": "/static/media/mv-constructora-img.589132419c17219afad7.jpg",
     "static/media/aerolab-img.jpg": "/static/media/aerolab-img.3f02e5fea7fecdd0d6d5.jpg",
     "static/media/portfolio-img.jpg": "/static/media/portfolio-img.23313e88ae68bf239840.jpg",
@@ -11,10 +11,10 @@
     "static/media/background.jpg": "/static/media/background.475988fcf6268e7e54ec.jpg",
     "index.html": "/index.html",
     "main.c170f2aa.css.map": "/static/css/main.c170f2aa.css.map",
-    "main.ac69687a.js.map": "/static/js/main.ac69687a.js.map"
+    "main.333dedb5.js.map": "/static/js/main.333dedb5.js.map"
   },
   "entrypoints": [
     "static/css/main.c170f2aa.css",
-    "static/js/main.ac69687a.js"
+    "static/js/main.333dedb5.js"
   ]
 }
