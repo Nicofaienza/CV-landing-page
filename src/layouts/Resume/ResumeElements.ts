@@ -17,6 +17,7 @@ export const ResumeWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     padding: 39px 24px;
     gap: 60px;
+    margin-top: 96px;
   }
 `;
 
