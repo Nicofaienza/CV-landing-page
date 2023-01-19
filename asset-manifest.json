@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.c170f2aa.css",
-    "main.js": "/static/js/main.b2bf7ea1.js",
+    "main.js": "/static/js/main.ac69687a.js",
+    "static/media/mv-constructora-img.jpg": "/static/media/mv-constructora-img.589132419c17219afad7.jpg",
+    "static/media/aerolab-img.jpg": "/static/media/aerolab-img.3f02e5fea7fecdd0d6d5.jpg",
+    "static/media/portfolio-img.jpg": "/static/media/portfolio-img.23313e88ae68bf239840.jpg",
     "static/media/hero-img.png": "/static/media/hero-img.3f0b04e71b43d98ecf66.png",
     "static/media/contact-img.png": "/static/media/contact-img.847e70740bef6b75d34a.png",
-    "static/media/mv-constructora-img.jpg": "/static/media/mv-constructora-img.0bbc3038359ae8cf634b.jpg",
-    "static/media/aerolab-img.jpg": "/static/media/aerolab-img.cb66a87845ab5c615eea.jpg",
-    "static/media/portfolio-img.jpg": "/static/media/portfolio-img.b5448ae76976743b2398.jpg",
     "static/media/background-mobile.jpg": "/static/media/background-mobile.a6ea9c1868d22218ce29.jpg",
     "static/media/background.jpg": "/static/media/background.475988fcf6268e7e54ec.jpg",
     "index.html": "/index.html",
     "main.c170f2aa.css.map": "/static/css/main.c170f2aa.css.map",
-    "main.b2bf7ea1.js.map": "/static/js/main.b2bf7ea1.js.map"
+    "main.ac69687a.js.map": "/static/js/main.ac69687a.js.map"
   },
   "entrypoints": [
     "static/css/main.c170f2aa.css",
-    "static/js/main.b2bf7ea1.js"
+    "static/js/main.ac69687a.js"
   ]
 }
