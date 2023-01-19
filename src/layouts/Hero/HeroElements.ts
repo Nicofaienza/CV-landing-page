@@ -111,7 +111,7 @@ export const HeroTitle = styled.h1`
   font-size: 64px;
   line-height: 115%;
   color: var(--black);
-  width: 50%;
+  width: min-content;
 
   @media screen and (max-width: 1400px) {
     font-size: 50px;
@@ -119,7 +119,6 @@ export const HeroTitle = styled.h1`
 
   @media screen and (max-width: 1130px) {
     font-size: 42px;
-    width: 400px;
   }
 `;
 
@@ -224,7 +223,7 @@ export const HeroImgContainer = styled.div`
   @media screen and (max-width: 1130px) {
     position: relative;
     top: 0;
-    left: -40px;
+    left: -20px;
     overflow: hidden;
     width: 80%;
     align-self: center;
