@@ -7,14 +7,17 @@
 }
 
 body {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background: url("./images/background.jpg"),
-    linear-gradient(239.24deg, #f4f7fe 22.34%, #fbfcff 83.1%);
-  background-repeat: no-repeat;
+  background: linear-gradient(239.24deg, #f4f7fe 22.34%, #fbfcff 83.1%);
+  background-image: url("./images/background.jpg");
+  overflow: hidden auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1130px) {
+  body {
+    background-image: url("./images/background-mobile.jpg");
+    background-position: top center;
+  }
+
   #main-wrapper {
     padding: 0 20px;
   }

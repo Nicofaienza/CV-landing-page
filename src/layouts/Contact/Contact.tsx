@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import {
   ContactButton,
   ContactButtonArrow,
@@ -22,12 +22,32 @@ export default function Contact(): JSX.Element {
         <ContactImgCont>
           <img src={contactImg} loading="lazy" />
         </ContactImgCont>
-        <ContactForm>
+        <ContactForm action="https://formspree.io/f/meqwolna" method="POST">
           <span>¿Tenés alguna duda? Mandame un mensaje.</span>
-          <ContactInput placeholder="Nombre y apellido / Empresa"></ContactInput>
-          <ContactInput placeholder="Email"></ContactInput>
-          <ContactTextArea placeholder="Mensaje"></ContactTextArea>
-          <ContactButton>
+          <label>
+            <ContactInput
+              type="text"
+              name="name"
+              placeholder="Nombre y apellido / Empresa"
+              required
+            ></ContactInput>
+          </label>
+          <label>
+            <ContactInput
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            ></ContactInput>
+          </label>
+          <label>
+            <ContactTextArea
+              required
+              name="message"
+              placeholder="Mensaje"
+            ></ContactTextArea>
+          </label>
+          <ContactButton type="submit">
             <span>Enviar</span>
             <img src={arrow} />
           </ContactButton>

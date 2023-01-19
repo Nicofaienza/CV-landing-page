@@ -24,6 +24,7 @@ export const ContactTitle = styled.h2`
 
   @media screen and (max-width: 1000px) {
     font-size: 42px;
+    width: 95%;
   }
 `;
 
@@ -57,6 +58,7 @@ export const ContactForm = styled.form`
   flex-direction: column;
   padding: 60px 32px;
   gap: 32px;
+  align-self: center;
 
   & span {
     font-weight: 700;
@@ -70,8 +72,7 @@ export const ContactForm = styled.form`
 
     & span {
       font-size: 20px;
-
-      width: 300px;
+      width: 80%;
     }
   }
 `;
@@ -79,9 +80,11 @@ export const ContactForm = styled.form`
 export const ContactInput = styled.input`
   width: 100%;
   height: 64px;
-  border: 1px solid #cbd4db;
+  border: 2px solid #cbd4db;
   border-radius: 10px;
   padding-left: 22px;
+  outline: none;
+  font-size: 18px;
 
   &::placeholder {
     font-weight: 500;
@@ -92,15 +95,18 @@ export const ContactInput = styled.input`
   &:focus {
     font-size: 18px;
     border: 2px solid var(--black);
-    outline: none;
+    background: #fff;
   }
 
   @media screen and (max-width: 1000px) {
     height: 52px;
-    font-size: 14px;
+    font-size: 12px;
 
     &::placeholder {
-      font-size: 14px;
+      font-size: 12px;
+    }
+    &:focus {
+      font-size: 12px;
     }
   }
 `;
@@ -125,10 +131,13 @@ export const ContactTextArea = styled.textarea`
   }
 
   @media screen and (max-width: 1000px) {
-    font-size: 14px;
+    font-size: 12px;
 
     &::placeholder {
-      font-size: 14px;
+      font-size: 12px;
+    }
+    &:focus {
+      font-size: 12px;
     }
   }
 `;
@@ -151,6 +160,7 @@ export const ContactButton = styled.button`
     transition: all 0.3s ease;
     position: relative;
     z-index: 10;
+    width: min-content;
   }
 
   &:hover span {

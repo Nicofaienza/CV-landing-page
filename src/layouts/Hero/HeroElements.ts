@@ -9,11 +9,6 @@ export const HeroWrapper = styled.div`
   & #hero__container {
     display: flex;
     margin-top: 128px;
-
-    @media screen and (max-width: 1130px) {
-      flex-direction: column;
-      gap: 42px;
-    }
   }
 
   & #hero__container__text {
@@ -21,6 +16,18 @@ export const HeroWrapper = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1130px) {
+    & #hero__container {
+      flex-direction: column;
+      gap: 96px;
+    }
+
+    & #hero__container__text {
+      width: 90%;
+    }
   }
 `;
 
@@ -28,6 +35,8 @@ export const HeroHeader = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 32px 0 0 0;
+  position: relative;
+  z-index: 10;
 
   & span {
     font-weight: 800;
@@ -67,6 +76,18 @@ export const HeroHeader = styled.div`
 
   /* RESPONSIVE */
 
+  @media screen and (max-width: 1400px) {
+    & .hero__logo-container {
+      width: 48px;
+      height: 48px;
+    }
+
+    & .logo-links {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   @media screen and (max-width: 1130px) {
     & span {
       font-size: 18px;
@@ -92,6 +113,10 @@ export const HeroTitle = styled.h1`
   color: var(--black);
   width: 50%;
 
+  @media screen and (max-width: 1400px) {
+    font-size: 50px;
+  }
+
   @media screen and (max-width: 1130px) {
     font-size: 42px;
     width: 400px;
@@ -103,7 +128,9 @@ export const HeroText = styled.p`
   font-size: 22px;
   line-height: 160%;
   color: var(--black);
-  width: 50%;
+  @media screen and (max-width: 1400px) {
+    font-size: 20px;
+  }
 
   @media screen and (max-width: 1130px) {
     font-size: 18px;
@@ -187,28 +214,22 @@ export const HeroButton = styled.a`
 
 export const HeroImgContainer = styled.div`
   position: absolute;
-  top: -30px;
-  right: -30%;
+  right: 0;
+  z-index: -1;
 
   & img {
-    position: relative;
+    width: 100%;
   }
+
   @media screen and (max-width: 1130px) {
     position: relative;
     top: 0;
-    left: 0;
+    left: -40px;
     overflow: hidden;
-    width: 100%;
-    height: 500px;
+    width: 80%;
+    align-self: center;
 
     & img {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      margin: auto;
-      width: 800px;
-      height: 800px;
     }
   }
 `;

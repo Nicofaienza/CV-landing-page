@@ -36,5 +36,6 @@ export const KnowitemsLi = styled.li`
 
   @media screen and (max-width: 1000px) {
     font-size: 15px;
+    width: 90%;
   }
 `;
