@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { HeroButton } from "../../layouts/Hero/HeroElements";
 import {
+  ProyectsButton,
   ProyectsCard,
   ProyectsCardImgCont,
   ProyectsCardName,
   ProyectsContainer,
   ProyectsTitle,
+  ProyectsWrapper,
 } from "./ProyectsElements";
 import { Proyect } from "./types";
 
@@ -21,7 +23,7 @@ export default function Proyects(props: Props): JSX.Element {
   const proyects = props.data;
 
   return (
-    <>
+    <ProyectsWrapper>
       <ProyectsTitle>Proyectos</ProyectsTitle>
       <ProyectsContainer>
         <ProyectsCard>
@@ -92,6 +94,13 @@ export default function Proyects(props: Props): JSX.Element {
           <ProyectsCardName>{proyects[2].name}</ProyectsCardName>
         </ProyectsCard>
       </ProyectsContainer>
-    </>
+      <HeroButton
+        href="https://github.com/Nicofaienza?tab=repositories"
+        target={"_blank"}
+        style={{ alignSelf: "center", marginTop: "60px" }}
+      >
+        <span>Ver más</span>
+      </HeroButton>
+    </ProyectsWrapper>
   );
 }

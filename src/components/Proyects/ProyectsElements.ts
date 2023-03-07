@@ -12,6 +12,11 @@ export const ProyectsTitle = styled.h3`
   }
 `;
 
+export const ProyectsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const ProyectsContainer = styled.ul`
   width: 100%;
   border-top: 1px solid #e8e8e8;
@@ -113,4 +118,9 @@ export const ProyectsCardImgCont = styled.div`
       }
     }
   }
+`;
+
+export const ProyectsButton = styled.a`
+  align-self: center;
+  margin-top: 60px;
 `;
