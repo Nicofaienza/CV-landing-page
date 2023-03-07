@@ -184,6 +184,7 @@ export const HeroButton = styled.a`
   &:hover {
     border: 2px solid var(--black);
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.04);
+    color: var(--black);
   }
 
   &:hover::before {

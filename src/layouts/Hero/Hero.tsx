@@ -51,9 +51,8 @@ export default function Hero(): JSX.Element {
             <strong>JavaScript vanilla</strong> y <strong>React JS</strong>.
             <br />
             <br />
-            Estoy en búsqueda de mi primer trabajo como desarrollador frontend
-            con el fin de mejorar mis habilidades y adquirir nuevas
-            experiencias.
+            Estoy en búsqueda de mi primer trabajo como desarrollador con el fin
+            de mejorar mis habilidades y adquirir nuevas experiencias.
           </HeroText>
           <HeroButton href="#contact">
             <span>Contactame</span>
