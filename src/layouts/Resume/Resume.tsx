@@ -10,10 +10,10 @@ export default function Resume(): JSX.Element {
     <ResumeWrapper>
       <ResumeTitle>📑Resumen</ResumeTitle>
       <ResumeSection>
-        <Knowledge data={data.knowledge} />
+        <Skills data={data.skills} />
       </ResumeSection>
       <ResumeSection>
-        <Skills data={data.skills} />
+        <Knowledge data={data.knowledge} />
       </ResumeSection>
       <ResumeSection>
         <Proyects data={data.proyects} />

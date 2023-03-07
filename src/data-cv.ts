@@ -7,36 +7,38 @@ import githubImg from "./images/github.png";
 import typescriptImg from "./images/typescript.png";
 import mvConstructoraImg from "./images/mv-constructora-img.jpg";
 import aerolabImg from "./images/aerolab-img.jpg";
-import portfolioImg from "./images/portfolio-img.jpg";
+import mlImg from "./images/ml-img.jpg";
 
 const dataResume = {
   knowledge: [
-    "Desarrollo de aplicaciones web con 𝗛𝗧𝗠𝗟𝟱, 𝗖𝗦𝗦𝟯 y 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 vanilla o preferentemente con el uso de su librería 𝗥𝗲𝗮𝗰𝘁 𝗝𝗦.",
-    "Librerías: styled-components, react-router, react-intersection-observer.",
+    "Desarrollo de aplicaciones web con HTML5, CSS3, JavaScript y TypeScript, preferentemente con el uso de la librería React JS",
+    "Librerías: styled-components, react-router, react-intersection-observer, react-responsive, Chakra UI.",
     "Experiencia en maquetación perfect pixel.",
+    "Manejo de estados con Context",
     "Experiencia en consumo de API Rest.",
-    "Manejo de 𝗚𝗶𝘁 y 𝗚𝗶𝘁𝗛𝘂𝗯.",
+    "Manejo de Git y GitHub.",
   ],
   skills: [
     ["HTML5", html5Img],
     ["CSS3", css3Img],
     ["JavaScript", javascriptImg],
+    ["TypeScript", typescriptImg],
     ["ReactJS", reactImg],
     ["Git", gitImg],
     ["GitHub", githubImg],
-    ["TypeScript", typescriptImg],
   ],
   proyects: [
+    {
+      name: "Clon de Mercado Libre",
+      img: mlImg,
+      deploy: "https://nicofaienza.github.io/ml-clon",
+    },
     {
       name: "MV Contstuctora",
       img: mvConstructoraImg,
       deploy: "https://nicofaienza.github.io/mv-constructora/",
     },
-    {
-      name: "Portfolio personal",
-      img: portfolioImg,
-      deploy: "https://nicofaienza.github.io/portfolio/",
-    },
+
     {
       name: "Aerolab Challenge",
       img: aerolabImg,

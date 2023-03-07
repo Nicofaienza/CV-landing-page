@@ -9,6 +9,7 @@
 body {
   background: linear-gradient(239.24deg, #f4f7fe 22.34%, #fbfcff 83.1%);
   background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
   overflow: hidden auto;
 }
 
