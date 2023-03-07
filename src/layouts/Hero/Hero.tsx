@@ -47,8 +47,8 @@ export default function Hero(): JSX.Element {
           <HeroTitle>👋 Hola, soy Desarrollador Frontend.</HeroTitle>
           <HeroText>
             Estudié de manera autodidacta el desarrollo de aplicaciones del lado
-            del frontend con <strong>HTML5</strong>, <strong>CSS3</strong>,
-            <strong>JavaScript</strong>, <strong>TypeScript</strong> y{" "}
+            del frontend con <strong>HTML5</strong>, <strong>CSS3</strong>,{" "}
+            <strong>JavaScript</strong>, <strong>TypeScript</strong> y
             <strong>React JS</strong>.
             <br />
             <br />
