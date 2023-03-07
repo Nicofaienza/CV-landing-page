@@ -128,6 +128,7 @@ export const ContactTextArea = styled.textarea`
 
   &:focus {
     font-size: 18px;
+    outline: 2px solid var(--black);
   }
 
   @media screen and (max-width: 1000px) {
@@ -207,7 +208,11 @@ export const ContactButton = styled.button`
   }
 
   @media screen and (max-width: 1000px) {
-    font-size: 16px;
+    height: 48px;
+
+    & span {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -249,5 +254,15 @@ export const ContactButtonArrow = styled.a`
   &:hover {
     border: 1px solid var(--black);
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.04);
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 40px;
+    height: 40px;
+
+    & img {
+      height: 32px;
+      width: 32px;
+    }
   }
 `;

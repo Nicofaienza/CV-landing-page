@@ -23,7 +23,9 @@ export default function Contact(): JSX.Element {
           <img src={contactImg} loading="lazy" />
         </ContactImgCont>
         <ContactForm action="https://formspree.io/f/meqwolna" method="POST">
-          <span>¿Tenés alguna duda? Mandame un mensaje.</span>
+          <span>
+            ¿Tenés alguna duda? <br /> Enviame un mensaje.
+          </span>
           <label>
             <ContactInput
               type="text"
